@@ -4,9 +4,9 @@
   "description": "Distraction Free Hacker News",
   "content_scripts": [{
     "js": ["df.js"],
-    "matches": ["https://news.ycombinator.com/*"]
+    "matches": ["https://news.ycombinator.com/", "https://news.ycombinator.com/news"]
   }],
-  "permissions": ["activeTab", "scripting", "storage", "tabs"],
+  "permissions": ["tabs"],
   "manifest_version": 3,
   "action": {
       "default_popup": "popup.html",
