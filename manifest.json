@@ -2,14 +2,19 @@
   "name": "DFHN",
   "version": "1.0",
   "description": "Distraction Free Hacker News",
-  "background": {
-    "service_worker": "background.js"
-  },
   "content_scripts": [{
     "js": ["df.js"],
     "matches": ["https://news.ycombinator.com/*"]
   }],
   "permissions": ["activeTab", "scripting", "storage", "tabs"],
   "manifest_version": 3,
-  "action": {}
+  "action": {
+      "default_popup": "popup.html",
+      "default_icon": {
+        "16": "logo.png",
+        "32": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    }
+  }
 }
