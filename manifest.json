@@ -1,6 +1,6 @@
 {
   "name": "DFHN",
-  "version": "1.0",
+  "version": "0.42",
   "description": "Distraction Free Hacker News",
   "content_scripts": [{
     "js": ["df.js"],
