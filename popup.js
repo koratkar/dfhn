@@ -10,7 +10,7 @@ function submit() {
             currentWindow: true
         }, (tab) => {
             console.log(encodeURIComponent(tab[0].url))
-            chrome.tabs.create({url: link + tab[0].url + "&t=" + tab[0].title})
+            chrome.tabs.create({url: link + tab[0].url + "&t=" + encodeURIComponent(tab[0].title)})
         })
     })
 }
