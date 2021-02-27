@@ -3,6 +3,8 @@ let burn_words = ['comments', 'discuss', 'new', 'past', 'show', 'jobs', 'submit'
 
 function destroylinks(c) {
     if (c == 0) {
+        let pagetop = document.getElementsByClassName("pagetop")[0]
+        pagetop.innerHTML = '<b class="hnname"><a href="news">Hacker News</a></b>'
         return
     } else if (typeof(hn[c]) == 'undefined') {
         destroylinks(c-1)
@@ -14,14 +16,9 @@ function destroylinks(c) {
             }
         }
     }
-        destroylinks(c-1)
-    }
-
-function destroylines() {
-    // document.getElementsByClassName("pagetop")[0].innerHtml = '<span class="pagetop"><b class="hnname"><a href="news">Hacker News</a></b></span>'
-    // console.log(document.getElementsByClassName("pagetop"))
-    let pagetop = document.getElementsByClassName("pagetop")[0]
-    pagetop.innerHTML = '<b class="hnname"><a href="news">Hacker News</a></b>'
+    destroylinks(c-1)
+}
+function destroysubtext() {
     let subtexts = document.getElementsByClassName("subtext")
     for (i=0; i<subtexts.length; i++) {
         subtexts[i].innerHTML = ""
@@ -29,5 +26,10 @@ function destroylines() {
 }
 
 destroylinks(hn.length)
-destroylines()
+if (!window.location.href.includes('item')) {
+    destroysubtext()
+} else {
+    document.getElementsByClassName("comment-tree")[0].remove()
+}
+
 console.log("DFHN is awake. View the source code: github.com/koratkar/dfhn.")

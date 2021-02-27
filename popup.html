@@ -3,12 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <style>
-        body {min-width: 200px;}
+        body {
+          min-width: 100px;
+          min-height: 20px;
+          background-color: #F6F6EF;
+        }
+         /* navbar and topstrip */
+      .topstrip {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        border-top: 10px solid #FF6600;
+        border-bottom: 0;
+        border-left: 0;
+        border-right: 0;
+      }
     </style>
     <script src="popup.js"></script>
 </head>
 <body>
-    <h1>Distraction Free Hacker News</h1>
-    <a id="submit" href="">Submit to HN</a>
+    <hr class="topstrip">
+    
+    <center>
+        <h1 style="font-family: Georgia, 'Times New Roman', Times, serif; color: black;">DFHN</h1>
+        <button id="submit" href="" style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Submit Page</button>
+    </center>
 </body>
 </html>
