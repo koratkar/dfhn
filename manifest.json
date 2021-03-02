@@ -1,6 +1,6 @@
 {
   "name": "DFHN",
-  "version": "0.42",
+  "version": "2020.03.02.42",
   "description": "Distraction Free Hacker News",
   "content_scripts": [{
     "js": ["df.js"],
