@@ -1,0 +1,104 @@
+#feed,
+ytd-browse[page-subtype=home] {
+    display: none;
+}
+
+#watch7-sidebar-ads {
+    display: none;
+}
+
+body {
+    color: white;
+}
+
+#logo-icon {
+    display: none;
+}
+
+#img {
+    display: none;
+}
+
+.style-scope ytd-two-column-browse-results-renderer {
+    display: none;
+}
+
+ytd-rich-grid-renderer {
+    display: none;
+}
+
+.style-scope ytd-merch-shelf-renderer {
+    display: none;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.view-count style-scope ytd-video-view-count-renderer {
+    display: none;
+}
+
+.style-scope ytd-subscribe-button-renderer {
+    display: none;
+}
+
+.ytp-timed-markers-container {
+    color: gray;
+}
+
+#endpoint-link {
+    display: none;
+}
+
+.ytp-timed-markers-container {
+    color: gray;
+}
+
+/* #button {
+    display: none;
+} */
+
+.style-scope ytd-topbar-menu-button-renderer {
+    display: none;
+}
+
+tp-yt-paper-button {
+    display: none;
+}
+
+.short-view-count style-scope ytd-video-view-count-renderer {
+    display: none;
+}
+
+.style-scope ytd-topbar-menu-button-renderer {
+    display: none;
+}
+
+.style-scope ytd-action-companion-ad-renderer {
+    display: none;
+}
+
+#info {
+    display: none;
+}
+
+.style-scope ytd-menu-renderer force-icon-button style-text {
+    display: none;
+}
+
+.style-scope ytd-watch-next-secondary-results-renderer {
+    display: none;
+}
+
+ytd-item-section-renderer {
+    display: none;
+}
+
+#sections {
+    display: none;
+}
+
+style-scope ytd-action-companion-ad-renderer {
+    display: none;
+}
