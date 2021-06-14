@@ -3,8 +3,11 @@
   "version": "2020.03.02.42",
   "description": "Distraction Free Hacker News",
   "content_scripts": [{
+    "matches": ["*://*.youtube.com/*", "https://news.ycombinator.com/*", "https://youtube.com/*"],
     "js": ["df.js"],
-    "matches": ["https://news.ycombinator.com/*"]
+    "css": ["css.css"],
+    "run_at": "document_start",
+    "all_frames": true
   }],
   "permissions": ["tabs"],
   "manifest_version": 3,
